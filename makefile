@@ -1,4 +1,4 @@
-CC = gcc
+CC = g++;
 
 program.exe: main.o quadr.o
     $(CC) main.o quadr.o -o program.exe
