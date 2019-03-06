@@ -1,13 +1,13 @@
-CC = gcc
+CC = g++
 
 program.exe: main.o quadr.o
-    $(CC) main.o quadr.o -o program.exe
+		$(CC) main.o quadr.o -o program.exe
 
 main.o: main.cpp QuadraticFunc.h
-    $(CC) -c -Wall -pedantic main.cpp
+		$(CC) -c -Wall -pedantic main.cpp
 
 quadr.o: QuadraticFunc.cpp QuadraticFunc.h
-    $(CC) -c -Wall -pedantic QuadraticFunc.cpp
+		$(CC) -c -Wall -pedantic QuadraticFunc.cpp -o quadr.o
 
 clean:
-    rm -f *.o program.exe
+		rm -f *.o program.exe
