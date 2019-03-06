@@ -1,6 +1,6 @@
 #include <iostream>
 #include "QuadraticFunc.h"
-#define PREC 3
+#define PREC 5
 
 main()
 {
@@ -15,6 +15,7 @@ main()
 
     std::cout << "\nNow let's count it's discriminant and roots." << std::endl;
     func1.countComponents();
+    func1.showDiscr();
     func1.showRoots();
 
     std::cout << "\nGreat! Now let's use the other constructor..." << std::endl;
@@ -22,6 +23,7 @@ main()
 
     std::cout << "We've successfully created func2! Let's take a look at its factors and roots" << std::endl;
     func2->showFactors();
+    func2->showDiscr();
     func2->showRoots();
     delete func2;
 }
