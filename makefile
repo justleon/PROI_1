@@ -16,4 +16,4 @@ quadr.o: QuadraticFunc.cpp QuadraticFunc.h
 		$(CC) -c QuadraticFunc.cpp -o quadr.o
 
 clean:
-		rm -f *.o program.exe
+		rm -f *.o program
